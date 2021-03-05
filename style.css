@@ -27,13 +27,9 @@
 }
 #blog{}
 #site{
-    height: 500px;
-    background:#303f9f;
+    background-color: #f8f9fa;
 }
-#footer{
-    height: 300px;
-    background: #283593;
-}
+#footer{}
 
 /* container */
 .container{
@@ -295,12 +291,11 @@
 }
 .blog h3{
     font-size: 2.125rem;
-    line-height: 1.5;
-    margin-bottom: 50px;
 }
 .blog-wrap{
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .bw-item{
     position: relative;
@@ -327,4 +322,117 @@
 }
 .bw-item figure img{
     width: 100%;
+}
+.notice-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.notice-wrap h3{
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.nw-left{
+    width: 780px;
+}
+.nw-left .total{
+    font-size:  0.875rem;
+    color: #999;
+}
+.nw-left i{
+    padding-left: 3px;
+}
+.nw-left ul{
+    border-top: 2px solid #6f6f6f;
+}
+.nw-left li{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size:  0.875rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.nw-left li a{
+    color: #666;
+}
+.nw-left li span{
+    color: #999;
+}
+.nw-right ul{
+    border-top: 2px solid #6f6f6f;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+}
+.nw-right li{
+    padding: 12px 0;
+    color: #666;
+}
+.nw-right li span{
+    padding: 5px 10px;
+    margin-right: 20px;
+    background-color: #666;
+    color: white;
+}
+
+/* site */
+.site{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.site div{
+    width: 16.6666%;
+}
+.site div h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.site div ul{
+    font-size: 0.875rem;
+    color: #666;
+}
+.site .two{
+    width: 33.22222%;
+}
+.site .two ul{
+    overflow: hidden;
+}
+.site .two li{
+    float: left;
+    width: 50%;
+}
+
+/* footer */
+.footer{
+    padding: 50px 0;
+}
+.footer .policy{
+    display: flex;
+    margin-bottom: 30px;
+}
+.footer .policy li{
+    padding-right: 30px;
+}
+.footer .policy .last{
+    position: relative;
+    color: #1d7abd;
+}
+.footer .policy .last::before{
+    content: '';
+    position: absolute;
+    left: -14px;  top: 3px;
+    width: 1px;
+    height: 18px;
+    background-color: #ccc;
+}
+.address{
+    font-size: 0.875rem;
+    color: #666;
+}
+.address ul{
+    margin-bottom: 20px;
+}
+.address span{
+    padding-right: 20px;
 }
