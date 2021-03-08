@@ -39,6 +39,24 @@
     /* background: rgba(0,0,0,0.2); */
 }
 
+/* skip */
+.skip{
+    position: relative;
+}
+.skip a{
+    position: absolute;
+    left: 0; top: -50px;
+    width: 140px;
+    border: 1px solid #444;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.skip a:focus,.skip a:active{
+    top: 0;
+}
+
 /* header */
 .header{
     display: flex;
