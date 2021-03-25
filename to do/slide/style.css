@@ -1,0 +1,88 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.slide-container{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slide-wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    padding: 16px;
+    transition: 0.5s;
+}
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,.next:hover{
+    background: black;
+}
+
+.slide-item{
+    transition: left .5s;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+/* number-text */
+.number-text{
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 8px 12px;
+}
+
+/* dot */
+.dots-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.dot {
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+  }
+.active, .dot:hover {
+    background-color: #717171;
+  }

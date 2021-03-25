@@ -1,0 +1,72 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+a{
+    
+}
+
+/* button */
+button:not(.close-button){
+    background-color:#4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 14px 20px;
+}
+button:not(.close-button):hover{
+    background-color: #39853c;
+}
+
+
+/* modal */
+.modal{
+    display: none;
+    position: relative;
+    width: 400px;
+    height: 530px;
+    border: 1px solid black;
+}
+.close-button{
+    position: absolute;
+    right: 7px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close-button:hover{
+    color: red;
+    cursor: pointer;
+}
+.img-container{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.img-container img{
+    width: 240px;
+    border-radius: 50%;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.login-container span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.loginbtn{
+    background: #4CAF50;
+}
+input{
+    display: inline-block;
+    padding: 5px;
+}
