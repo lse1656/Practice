@@ -1,0 +1,24 @@
+/* reset */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+button {background: inherit; border: none; cursor: pointer;}
+button:active {outline: none; box-shadow: none;}
+
+.slide-wrap {position: relative; display: flex; flex-direction: column; align-items: center; width: 400px; margin: 0 auto;}
+.slide-box {width: 100%; overflow: hidden;margin-bottom: 30px;}
+.slide-list {display: flex;}
+.slide-content {display: flex; justify-content: center; align-items: center; flex-shrink: 0; width: 400px; height: 400px;}
+.slide-content p {color: white; font-size: 60px; font-weight: bold;}
+.slide01 {background: #c668ff;}
+.slide02 {background: #80ff70;}
+.slide03 {background: #64e4ff;}
+.slide04 {background: #ffa86d;}
+.slide05 {background: #ffdf46;}
+
+.slide-btn button {position: absolute; top: 170px; border: 2px solid #efefef; padding: 25px 20px; font-size: 16px;}
+.slide-btn button:hover {border-color: #a1bae9;}
+.slide-btn .prev {left: -100px;}
+.slide-btn .next {right: -100px;}
+
+ul.slide_pagination {width: 20px; height: 20px; background: #e0dddc; border-radius: 50%;}
+ul.active {background: black;}
+
