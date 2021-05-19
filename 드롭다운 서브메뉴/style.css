@@ -1,0 +1,52 @@
+/* reset */
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    background: green;
+    padding-top: 70px;
+}
+header {
+    margin-top: 20px;
+    background: white;
+    height: 50px;
+    overflow: hidden;
+    transition: height .4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav {
+    width: 860px;
+    margin: 0 auto;
+}
+ul, li {list-style: none;}
+a {color: #333; text-decoration: none;}
+a:hover {text-decoration: underline;}
+.mainmenu:hover .submenu {display: block;}
+.mainmenu > li {
+    position: relative;
+    float: left;
+}
+.mainmenu h3 a {
+    display: block;
+    padding: 0 66px;
+}
+.mainmenu > li h3 {
+    line-height: 50px;
+}
+.submenu {
+    position: absolute;
+    width: 100%;
+    /* display: none; */
+}
+.submenu li {
+    text-align: center;
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 5px;
+}
