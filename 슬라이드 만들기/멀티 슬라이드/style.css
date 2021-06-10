@@ -1,0 +1,37 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.slider_wrapper {
+    position: relative;
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex; 
+    list-style: none;
+    transition: all .5s;
+}
+.slides li:not(:last-child){
+    margin-right: 30px;
+}
+.slides li img {
+    display: block;
+}
+.controls button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-150%);
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+.controls .prev {
+    left: 120px;
+}
+.controls .next {
+    right: 120px;
+}
